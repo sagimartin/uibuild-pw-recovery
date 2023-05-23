@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 24px;
+  color: #006837;
+  text-align: center;
+  margin-top: 20vh;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 520px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+div {
+  font-weight: 500;
+  font-size: 16px;
+  color: #467745;
+  line-height: 1.5rem;
+
+  background-color: #f9c582;
+
+  max-width: 520px;
+  height: auto;
+  margin: auto;
+  padding: 20px;
+
+  display: flex;
+  align-items: start;
+  justify-content: baseline;
+  flex-direction: column;
+}
+
+div > span:nth-child(2) {
+  font-style: italic;
+  font-weight: 100;
+}
+
+input {
+  font-weight: 500;
+  font-size: 16px;
+  color: #98a991;
+
+  width: 100%;
+  max-width: 480px;
+  height: 64px;
+  padding: 0 10px 0 20px;
+  margin-top: 1.5rem;
+
+  outline: none;
+  border: none;
+}
+
+@media only screen and (max-width: 520px) {
+  div {
+    width: 100%;
+  }
+
+  input {
+    width: calc(100% - 40px);
+    min-width: 40px;
+    margin-left: 20px;
+  }
+}
+
+button {
+  font-weight: 700;
+  font-size: 36px; /* Jobb mint a 21px*/
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+
+  background-color: #f9c582;
+  color: #006837;
+
+  border-style: none;
+}
